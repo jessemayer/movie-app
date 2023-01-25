@@ -7,6 +7,7 @@ function Result({result}) {
         <h3>{result.Title}</h3>
     </div>
   )
+  
 }
 
 export default Result

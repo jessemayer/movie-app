@@ -13,6 +13,7 @@ function Search ({ handleInput, search }) {
       </section>
     
   )
+  
 }
 
 export default Search
