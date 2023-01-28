@@ -32,7 +32,7 @@ const StarRating = () => {
       </label>
       );
     })}
-          <p>Please rate the movie</p>
+          <p>Please rate and review this movie</p>
          </div>
 }
 

@@ -3,10 +3,11 @@ import React from 'react'
 function Search ({ handleInput, search }) {
   return (
    
-      <section className='searchbox-wrap' >
-        <input type='text' 
+      <section className='searchBox-wrap' >
+        <input 
+        type='text' 
         placeholder= "Search for a great Movie..." 
-        className='searchbox'
+        className='searchBox'
         onChange={handleInput}
         onKeyDown={search}
         />
