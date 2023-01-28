@@ -142,6 +142,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   margin: 0px -15px 30px;
+  text-shadow: 1px 1px 2px pink;
 }
   
 .popup .content .plot img {
@@ -154,9 +155,13 @@ section {
   flex: 1 1 50%;
   padding: 15px;
 }
-  
-.popup .content .close {
-  display: inline-block;
+
+p {
+  text-shadow: 2px 2px 3px white;
+}
+
+/* .popup .content .close {
+  display: flex;
   padding: 15px 30px;
   font-size: 18px;
   font-weight: 700;
@@ -168,8 +173,27 @@ section {
   appearance: none;
   cursor: pointer;
   transition: 0.4s ease-out;
-}
+} */
   
 .popup .content .close:hover {
+  background: #223343;
+}
+
+/* .submit {
+  display: flex;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  background: #4484C4;
+  color: #FFF;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+} */
+
+.submit:hover {
   background: #223343;
 }

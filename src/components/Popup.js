@@ -16,14 +16,19 @@ function Popup({ selected, closePopup,}) {
                 <img src={selected.Poster} alt=""/>
                 <p>{selected.Plot}</p>
             </div>
-            <StarRating />
-            <button className='close' onClick={closePopup}>Close</button>
+            
+            <div className='row'>
+            <button className='close btn btn-primary col-3' onClick={closePopup}>Close</button>
+            
             <ReviewForm 
+                
                 form ={form}
                 reviews = {reviews}
                 setForm = {setForm}
                 setReviews = {setReviews}
                 />
+                </div>
+                
             <ReviewList 
                 reviews = {reviews}
                 />

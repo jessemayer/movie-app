@@ -1,5 +1,6 @@
 import React from 'react'
 import { v4 as uuid } from 'uuid';
+import StarRating from './StarsRating';
 
 const ReviewForm = ({form, reviews, setForm, setReviews}) => {
     
@@ -18,9 +19,10 @@ const ReviewForm = ({form, reviews, setForm, setReviews}) => {
 
 
   return (
-    <form className='mb-3 form-floating' onSubmit={handleSubmit}>
-        <button type='submit' className='close'>Submit</button>
-        <h4>Please leave a review of this movie!</h4>
+    <form className='mb-3 form-floating container' onSubmit={handleSubmit}>
+      <br></br>
+        
+        <StarRating />
         <input 
             type='text'
             id='form-input'
@@ -30,6 +32,8 @@ const ReviewForm = ({form, reviews, setForm, setReviews}) => {
             value={form.review}
             onChange={handleChange}
             />
+            <br></br>
+            <button type='submit' className='submit btn btn-success  col-3 '>Submit</button>
     </form>
   )
 }
