@@ -17,6 +17,7 @@ function Popup({ selected, closePopup,}) {
                 <p>{selected.Plot}</p>
             </div>
             
+            
             <div className='row'>
             <button className='close btn btn-primary col-3' onClick={closePopup}>Close</button>
             
